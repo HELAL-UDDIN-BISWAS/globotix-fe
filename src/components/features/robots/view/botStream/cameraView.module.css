@@ -1,0 +1,193 @@
+.imageGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr 0.5fr;
+
+  gap: 5px;
+}
+
+.imageGrid img {
+  width: 100%;
+  /* max-height: 260px;  Adjust this value as needed */
+  height: 100px;
+  display: block;
+  /* border-radius: 8px; */
+  object-fit: cover; /* Ensures the image covers the specified height without distortion */
+  border: 1px solid #a4a4a4;
+}
+.expendBox {
+  position: absolute;
+  margin-top: 9rem;
+  margin-left: 40rem;
+  z-index: 998;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background: #504f57bf;
+  padding: 10px;
+  align-items: center;
+}
+.imageExpand {
+  position: relative;
+}
+.imageContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.imageContainer img {
+  display: block;
+}
+
+.expandIconBox {
+  font-size: 8px;
+  position: absolute;
+  /* bottom: 25px;
+  right: 10px; */
+  /* cursor: pointer; */
+  background-color: #696e7c;
+  padding: 4px;
+  color: #ffffff;
+}
+
+.expandIcon {
+  pointer-events: none;
+}
+
+/* .imageGridLive {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 5px;
+} */
+.imageGridLive {
+  display: grid;
+  grid-template-columns: 30% 30% 20% 20%; /* Four equal columns */
+  gap: 5px; /* Space between items */
+  padding: 20px; /* Padding around the grid */
+  justify-items: center; /* Center items in their grid cells */
+  align-items: center; /* Center items vertically */
+}
+
+/* Common container styling for all cameras */
+.imageContainerLive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px; /* Adjust width for uniformity */
+  height: 200px; /* Adjust height for uniformity */
+  background-color: black; /* Background color */
+  position: relative; /* Position relative for absolute children */
+  border: 2px solid #444; /* Border for better visibility */
+  box-sizing: border-box;
+  overflow: hidden; /* Hide any overflow */
+  border-radius: 10px; /* Rounded corners for a modern look */
+}
+
+.imageContainerLiveFront {
+  width: 300px; /* Set fixed width for the front camera */
+  height: 200px; /* Set fixed height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: black; /* Background color */
+  position: relative; /* Position relative for absolute children */
+  border: 2px solid #444; /* Border for better visibility */
+  box-sizing: border-box;
+  overflow: hidden; /* Hide any overflow */
+  border-radius: 10px; /* Rounded corners for a modern look */
+}
+
+/* Common image styles */
+.imageContainerLive img,
+.imageContainerLiveFront img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the container completely */
+  border-radius: 8px; /* Rounded corners for images */
+  border: 1px solid #a4a4a4;
+}
+/* .imageContainerLive {
+  width: 100%; /* Ensure container takes up full width of its column 
+}
+
+.imageGridLive img {
+  /* width: 100%; 
+  /* max-height: 260px;  Adjust this value as needed 
+  height: auto;
+  width: 100%;
+  display: block;
+  /* border-radius: 8px; 
+  object-fit: contain; /* Ensures the image covers the specified height without distortion
+  border: 1px solid #a4a4a4;
+} */
+/* Overlay text for camera labels */
+/* Overlay text for camera labels */
+/* Overlay text for camera labels */
+.expandIconBoxLive {
+  font-size: 14px; /* Slightly larger font size for readability */
+  position: absolute; /* Position over the image */
+  top: 10px; /* Padding from the top */
+  left: 10px; /* Padding from the left */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Transparent background for text readability */
+  padding: 5px 10px; /* Padding around text */
+  color: #ffffff; /* White text color */
+  border-radius: 4px; /* Slightly rounded corners */
+}
+
+/* Expand button styling */
+.expendBoxLive {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 998;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: rgba(80, 79, 87, 0.75); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Icon styling */
+.expandIcon {
+  color: #ffffff;
+  font-size: 20px;
+  pointer-events: none;
+}
+.imageExpandLive {
+  position: relative;
+}
+.imageContainerLive {
+  position: relative;
+  /* display: inline-block; */
+}
+.imageContainerLiveLeftRight {
+  display: flex;
+  flex-direction: column;
+}
+.imageContainerLive img {
+  display: block;
+}
+
+.expandIconBoxLive {
+  font-size: 8px;
+  /* position: absolute; */
+  /* bottom: 25px;
+  right: 10px; */
+  /* cursor: pointer; */
+  /* background-color: #696e7c; */
+  /* padding: 4px; */
+  color: #ffffff;
+}
+
+.expandIconLive {
+  pointer-events: none;
+}

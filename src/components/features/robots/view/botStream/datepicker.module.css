@@ -1,0 +1,150 @@
+.CalendarBox {
+  /* border: 1px solid #344054; */
+  border-radius: 10px;
+  background-color: red;
+}
+.Label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 400px;
+  border-radius: 10px;
+  color: #0d0f12;
+  background-color: #f3f0e2;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+/* .Label input {
+  width: 100%;
+  height: 48px;
+  color: #0d0f12;
+  background-color: #f3f0e2;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  &:focus-within {
+    border: none;
+    outline: none;
+  }
+} */
+/* .CalendarBox input::placeholder {
+  color: #98a2b3;
+  font-size: 16px;
+  font-weight: 700px;
+} */
+/* .react-datepicker {
+  font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+  font-size: 0.8rem;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #aeaeae;
+  border-radius: 0.3rem;
+  display: inline-block;
+  position: relative;
+  line-height: initial;
+  margin-left: 30px;
+}
+.react-datepicker__triangle {
+  display: none;
+}
+.react-datepicker__navigation-icon--next {
+  top: -4px;
+  left: -10px;
+}
+.react-datepicker__navigation-icon--previous {
+  top: -4px;
+  left: 10px;
+} */
+#speed-select {
+  font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+.select-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dot {
+  background-color: #344054;
+  cursor: pointer;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  /* Additional styles if needed */
+}
+.currentTime {
+  background-color: green; /* or any other styling */
+  font-weight: 700;
+  /* font-size: 20px; */
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+}
+
+.dotLabel {
+  color: #344054;
+  cursor: pointer;
+
+  /* Additional styles if needed */
+}
+.currentTimeLabel {
+  color: green; /* or any other styling */
+  font-weight: 700;
+  /* font-size: 20px; */
+}
+
+.calendarBox {
+  position: absolute;
+  background: #ffffff;
+  border: 1px solid #59e8f2;
+  padding: 20px;
+  color: #344054;
+  border-radius: 10px;
+  margin-top: -25rem;
+  /* margin-left: 16rem; */
+}
+.calendarBoxAction {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.calendarBoxApplyAction {
+  background: #068795;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 7px 12px;
+  font-size: 14px;
+  font-weight: 700;
+  border: 1px solid #068795;
+}
+.calendarBoxResetAction {
+  background: none;
+  border: none;
+  color: #068795;
+  padding: 7px 12px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.dateBox {
+  /* position: relative; */
+  display: flex;
+}
+.dateBtn {
+  background: none;
+  border: 1px solid #068795;
+  color: #000000;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  text-align: center;
+}

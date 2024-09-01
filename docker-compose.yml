@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  frontend:
+    image: nexbedev/globotix-fe:qat
+    container_name: globotix-fe
+    restart: always
+    env_file: .env
+    environment:
+      NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL}
+      NEXT_PUBLIC_URL: ${NEXT_PUBLIC_URL}
+      NODE_ENV: ${NODE_ENV}
+    ports:
+      - 3000:3000

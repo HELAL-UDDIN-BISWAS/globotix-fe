@@ -1,0 +1,234 @@
+.DateNavBtn {
+  cursor: pointer;
+  padding: 0.625rem;
+  border-radius: 50%;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  border: 0px;
+  background-color: transparent;
+  opacity: 1;
+  &:hover {
+    background-color: light-grey;
+  }
+}
+
+.Text {
+  text-align: center;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.Icon {
+  height: 15px;
+  width: 15px;
+  flex-shrink: 0;
+}
+
+.DropdownRoot {
+  .dropdown-menu {
+    min-width: auto;
+    width: 100%;
+    height: 12rem;
+    overflow-y: auto;
+    font-size: 0.95rem;
+    border-radius: 8px;
+    overflow: hidden auto;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    border: 1px solid light-grey;
+    background-color: light-grey;
+    &::-webkit-scrollbar {
+      width: 6px;
+      border-radius: 10px;
+      background-color: light-grey;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: light-grey;
+    }
+  }
+  .dropdown-divider {
+    margin: 0;
+    border-top-color: rgba(255, 255, 255, 0.15);
+  }
+  .dropdown-item {
+    color: #000;
+    padding: 0.35rem 1rem;
+    background-color: light-grey;
+    &:hover {
+      background-color: light-grey;
+    }
+  }
+  .toggle-btn {
+    text-align: left;
+    margin-left: 10px;
+    padding: 5px 12px;
+    border-radius: 8px;
+    align-items: center;
+    display: inline-flex;
+    color: #068795;
+    background-color: #fff;
+    border: 1px solid light-grey;
+    min-width: "7.5rem";
+    .label {
+      flex: 1;
+      font-size: 16px;
+    }
+    .icon {
+      font-size: 1.25rem;
+      margin-left: 0.5rem;
+    }
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+.NavigationIcon {
+  color: #34343a;
+  font-size: 1.25rem;
+}
+
+.DatepickerContainer {
+  overflow: hidden;
+  .react-datepicker__month-container {
+    width: auto;
+    border-radius: 8px;
+    padding-bottom: 0.5rem;
+    background-color: #fff;
+  }
+
+  .react-datepicker__input-container {
+    color: #c3c2c6;
+    cursor: pointer;
+    display: flex;
+    font-size: 13px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 0.15rem 0.75rem;
+    background-color: #000;
+  }
+  .react-datepicker {
+    font-size: 16px !important;
+    border-color: #232326;
+    border-radius: 8px;
+    border-width: 0;
+    background-color: " #00000";
+
+    &__header {
+      border: none !important;
+      padding-top: 0px !important;
+      background-color: #fff !important;
+    }
+
+    &__week {
+      display: flex;
+      padding: 0rem 0.75rem;
+      justify-content: space-around;
+      align-items: center;
+    }
+    &__day-names {
+      padding: 0rem 0.75rem;
+      justify-content: space-around;
+    }
+
+    &__day-name {
+      width: 2.5rem;
+
+      font-size: 16px !important;
+      color: var(--ob-card-bg) !important;
+    }
+
+    &__day {
+      display: flex;
+      width: 2.5rem;
+      height: 2.5rem;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      color: #000;
+      font-size: 1rem !important;
+      position: relative;
+      border-radius: 100%;
+
+      /* ::hover {
+        background: grey;
+        border-radius: 100% !important;
+        .react-datepicker__day--range-end {
+          border-top-right-radius: 50px !important;
+          border-bottom-right-radius: 50px !important;
+          background: #068795 !important;
+          color: #fff !important;
+        }
+      } */
+
+      &--in-selecting-range {
+        background: white;
+        color: black;
+        width: 2.5rem;
+        height: 2.5rem;
+        position: relative;
+      }
+
+      &--selecting-range-start {
+        background: white;
+        color: black;
+        z-index: 9999;
+      }
+
+      &--selecting-range-end {
+        background: white;
+        color: black;
+        z-index: 9999;
+      }
+      &--outside-month {
+        color: transparent !important;
+        pointer-events: none;
+      }
+
+      &--range-start {
+        border-top-left-radius: 25px !important;
+        border-bottom-left-radius: 25px !important;
+        background: #068795 !important;
+        color: #fff !important;
+      }
+      &--in-range {
+        background: #068795;
+        color: #fff !important;
+        width: 2.5rem;
+        height: 2.5rem;
+        position: relative;
+        /* :hover {
+          background: #068795;
+          color: #fff;
+          width: 2.5rem;
+          height: 2.5rem;
+          border-radius: 50px !important;
+          position: relative;
+        } */
+      }
+      &--range-end {
+        border-top-right-radius: 25px !important;
+        border-bottom-right-radius: 25px !important;
+        background: #068795 !important;
+        color: #fff !important;
+      }
+
+      &--selected {
+        background: #068795;
+        color: #fff;
+        /* :hover {
+          border-radius: 100% !important;
+          background: #068795 !important;
+          color: #fff !important;
+        } */
+      }
+
+      &--disabled {
+        color: #c7c7c7 !important;
+      }
+    }
+  }
+}

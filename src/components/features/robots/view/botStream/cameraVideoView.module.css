@@ -1,0 +1,65 @@
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 15px;
+}
+
+.imageGrid img {
+  width: 100%;
+  max-height: 260px; /* Adjust this value as needed */
+  /* height: 75px; */
+  display: block;
+  border-radius: 8px;
+  object-fit: cover; /* Ensures the image covers the specified height without distortion */
+  border: 1px solid #a4a4a4;
+}
+.expendBox {
+  position: absolute;
+  /* margin-top: 9rem;
+  margin-left: 40rem; */
+  z-index: 998;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background: #504f57bf;
+  padding: 10px;
+  align-items: center;
+}
+.imageExpand {
+  position: relative;
+}
+.imageContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.imageContainer img {
+  display: block;
+}
+.expandIconNameBox {
+  font-size: 8px;
+  position: absolute;
+  /* bottom: 25px;
+  right: 10px; */
+  cursor: pointer;
+  background-color: #696e7c;
+  padding: 4px;
+  color: #ffffff;
+}
+
+.expandIconBox {
+  font-size: 8px;
+  position: absolute;
+  bottom: 25px;
+  right: 10px;
+  cursor: pointer;
+  background-color: #696e7c;
+  padding: 4px;
+  color: #ffffff;
+}
+
+.expandIcon {
+  pointer-events: none;
+}
